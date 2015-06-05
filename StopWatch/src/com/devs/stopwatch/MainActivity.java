@@ -23,6 +23,8 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity implements OnClickListener {
 
+	private final String TAG = getClass().getSimpleName();
+	
 	private Timer timer;
 	private int timeCountUp = 0;
 	private int hour, minute, second, reminder;
