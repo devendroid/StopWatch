@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818"
+    tools:context="com.devs.stopwatch.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:"
+            android:textColor="#0040FF"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/tv_mn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:"
+            android:textColor="#0040FF"
+            android:textSize="70sp"
+            android:scrollY="10sp" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#6EA3EB"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"
+            android:text="00"
+            android:textColor="#0040FF"
+            android:textSize="250sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+
+        <ListView
+            android:id="@+id/laps_listview"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/ic_action_stop" />
+
+    <ImageView
+        android:id="@+id/iv_play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/iv_stop"
+        android:src="@drawable/ic_action_play" />
+
+</RelativeLayout>
