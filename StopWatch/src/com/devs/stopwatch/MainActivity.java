@@ -21,6 +21,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+
+
+// http://www.vogella.com/tutorials/EclipseGit/article.html
 public class MainActivity extends ActionBarActivity implements OnClickListener {
 
 	private final String TAG = getClass().getSimpleName();
