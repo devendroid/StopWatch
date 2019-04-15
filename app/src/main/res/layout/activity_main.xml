@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818"
+    android:padding="16dp"
+    tools:context="com.devs.stopwatch.MainActivity">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/tv_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:"
+            android:textColor="@color/digit_color"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/tv_mn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollY="10sp"
+            android:text="00:"
+            android:textColor="@color/digit_color"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:gravity="center"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/digit_shadow"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"
+            android:text="00"
+            android:textColor="@color/digit_color"
+            android:textSize="100sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_millis"
+        android:layout_below="@+id/layout_time"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textColor="#ffffff"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tv_laps"
+        android:layout_below="@+id/layout_time"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__Laps__"
+        android:textStyle="italic"
+        android:textColor="#B5FFFFFF"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/laps_listview"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_laps"
+        android:layout_marginTop="16dp"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"/>
+
+
+    <ImageView
+        android:id="@+id/iv_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/ic_action_stop" />
+
+    <ImageView
+        android:id="@+id/iv_play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_stop"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_action_play" />
+
+</RelativeLayout>
